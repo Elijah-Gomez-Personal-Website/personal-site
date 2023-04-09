@@ -1,3 +1,5 @@
+console.log("Hello World!");
+
 const externalLink = document.querySelector('#external_link');
 
 externalLink.addEventListener('click', function(e) {
