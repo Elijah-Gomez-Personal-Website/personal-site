@@ -20,8 +20,8 @@ a {
 header{
     display: flex;
     font-family: 'Bebas Neue', cursive;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
     padding: 20px;
     background-color: #252422;
     /* background-image: linear-gradient(#403D39, #252422); */
@@ -63,15 +63,45 @@ h1 {
 h2 { 
     color: #252422;
     font-family: 'Bebas Neue', cursive;
-    font-size: 36px;
+    font-size: 32px;
     margin: 0px 20px 0px 20px;
     padding: 20px;
 }
 
-section {
-    border-top: 1px solid #252422;
+h3 { 
+    color: #252422;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    margin: 0px 20px 20px 0px;
 }
 
+section {
+    border-top: 1px solid #252422;
+    margin: 0px 20px 0px 20px;
+    padding: 20px;
+}
+
+section:nth-of-type(odd) > img {
+    float: left;
+    margin: 0 24px 24px 0;
+}
+
+section:nth-of-type(even) > img {
+    float: right;
+    margin: 0 0 24px 24px;
+}
+
+section > img {
+    height: 128px;
+}
+
+#index_p{
+    font-size: 26px;
+}
+
+section p{
+    font-size: 16px;
+}
 article { 
     color: #252422;
     font-size: 26px;
@@ -113,6 +143,11 @@ footer {
     background-color: #252422;
     box-shadow: 5px 10px #ad4319;
     flex: 1;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 footer img{
