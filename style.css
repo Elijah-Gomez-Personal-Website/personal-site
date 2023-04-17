@@ -210,12 +210,12 @@ footer img{
 
 @media (max-width: 880px){
     #mySlider{
-        display: none;
+        display: none !important;
     }
 }
 
 @media (max-width: 691px){
     #titleSlider{
-        display: none;
+        display: none !important;
     }
 }
