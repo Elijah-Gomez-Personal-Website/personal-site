@@ -1,19 +1,22 @@
 console.log("Hello World!");
 
-const externalLink = document.querySelector('#external_link');
+const externalLink = document.querySelector("#external_link");
 
-externalLink.addEventListener('click', function(e) {
-    e.preventDefault();
+externalLink.addEventListener("click", function (e) {
+  e.preventDefault();
 
-    // console.log(e.target)
-    // console.log(externalLink);
-    // const link = e.target.href;
-    
-    const link = externalLink.href;
+  // console.log(e.target)
+  // console.log(externalLink);
+  // const link = e.target.href;
 
-    const navigateAway = confirm("Are you sure you want to navigate away from this website?");
+  const link = externalLink.href;
 
-    if (navigateAway) {
-        window.location = link;
-    }
+  const navigateAway = confirm(
+    "Are you sure you want to navigate away from this website?"
+  );
+
+  if (navigateAway) {
+    window.location = link;
+  }
 });
+
