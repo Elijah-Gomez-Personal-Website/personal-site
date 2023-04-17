@@ -186,3 +186,36 @@ footer img{
     background-image: linear-gradient(#FFFCF2, #CCC5B9);
     box-shadow: 0 0 12px -2px black;
 }
+
+#mySlider{
+    display: block;
+}
+
+#titleSlider{
+    display: block;
+}
+
+/* I can just remove "all and" and it will work the same since it defaults to all */
+@media all and (max-width: 1280px){
+    ul{
+        flex-direction: column;  
+    }
+    li {
+        padding: 0px;
+        /* margin-right: 20px; */
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 880px){
+    #mySlider{
+        display: none;
+    }
+}
+
+@media (max-width: 691px){
+    #titleSlider{
+        display: none;
+    }
+}
